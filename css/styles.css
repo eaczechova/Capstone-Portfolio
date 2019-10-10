@@ -8,6 +8,7 @@
 
 body {
   box-sizing: border-box;
+  
   /* overflow: -moz-scrollbars-vertical;
   overflow-x: hidden;
   overflow-y: auto; */
@@ -16,6 +17,19 @@ body {
 html {
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+.main-container {
+  padding: 0;
+}
+
+.container-fluid {
+  padding-right:0px;
+  padding-left:0px;
+}
+
+footer {
+  margin: 0;
 }
 
 /** Navigation **/
@@ -46,13 +60,6 @@ nav ul li {
   display: inline-block;
   font-size: 13px;
 }
-/* 
-header {
-
-  margin: auto;
-  /* position: relative; */
-  /* top:58px; */
-} */
 
 .nav-item {
   font-size: 16px;
@@ -77,17 +84,21 @@ header {
   margin-bottom: 0;
 }
 
+.row {
+  margin: 0;
+}
+
 .jumbotron {
-  height: 100vh;
-  margin: 0 auto;
+  height: 110vh;
+  width: 100%;
   max-width: 1500px;
+  margin: 0 auto;
   background: url(../img/bg-theme.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:center;
+  background-position: '50% 100%';
   color: whitesmoke;
-  padding: 0px;
-  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+  text-shadow: 1px 1px 2px rgb(94, 94, 91);
 }
 
 .svg-inline--fa {
@@ -164,12 +175,13 @@ a:active, a:hover, a:visited {
 }
 
 .jumbotron-text {
-  margin-top: 20px;
+  margin-top: 25px;
+  padding-top: 5px;
   width: 100%;
 }
 
 .action-btn {
-  margin-top: 15px;
+  margin-top: 10px;
   background-color: transparent;
   border: 1px solid whitesmoke;
   border-radius: 30px;
@@ -326,7 +338,7 @@ input::placeholder, textarea::placeholder {
  @media (min-width: 868px) { 
   .jumbotron-text {
     padding-top: 80px;
-    f
+  
   }
 
   .lead:first-of-type, .lead:last-of-type {
@@ -346,4 +358,7 @@ input::placeholder, textarea::placeholder {
     height: 100vh;
     padding: 190px 20px 0;
   }
+
+  .action-btn {
+    margin-top: 30px;}
  } 
