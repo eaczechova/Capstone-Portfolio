@@ -118,8 +118,18 @@ html {
   color: whitesmoke;
 }
 
+.action-btn a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 .action-btn:hover {
   background-color: whitesmoke;
+  color: #111;
+}
+
+.action-btn:hover  a {
+  color: #111;
 }
 
 /* About */
@@ -129,7 +139,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 100vh; */
   padding: 0;
   margin: 2rem auto;
 }
@@ -191,61 +200,86 @@ html {
   padding: 3rem 2rem;
 }
 
- .test {
+ /* .test {
   border: 1px solid red;
+} */
+
+/* Portfolio */
+
+.portfolio {
+  background: #f7f7f7;
+  padding: 4rem 2rem;
+}
+
+.card-container {
+  padding: 4rem 2rem;
+  max-width: 100rem;
+  margin: 0 auto;
 }
 
 .card {
-  position: relative;
-  max-width: 260px;
-  height: 180px;
-  margin: 15px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 1;
+  width: 30rem;
+  height: 20rem;
+  margin: 2rem;
+  padding: 0;
   border-radius: 4px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
-  background-image: url("../img/item_1.png");
+  border: none;
 } 
 
-/* .overlay {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.95);
-  transform: translateX(-100%);
-  /* overflow: hidden;
-  width: 100%;
-  height:0; */
-  transition: opacity .5s ease;
-  /* text-align: center; */
+.image {
+  width: 30rem;
+  height:20rem;
+  margin: 0;
+  padding: 0;
+  filter: grayscale(50%);
 }
 
-.card:hover .overlay, .card:active .overlay {
-  /* bottom: 0; */
-  width: 100%;
-  opacity: 1;
-} */
-
-/* .overlay {
+.overlay {
   position: absolute;
-  top: 0;
+  bottom: -1;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.95);
-  opacity: 1;
-  transform: translateX(-100%);
-  transition: opacity .5s;
-} */
+  background-color: white;
+  overflow: hidden;
+  width: 0;
+  height: 101%;
+  transition: .2s .2s cubic-bezier(.17,.67,.83,.67);
+}
 
-/* .portolio-item:hover .overlay {
+.card:hover .overlay {
+  width: 101%;
+  background-color: rgba(255, 255, 255, .5);
+  color: rgb(6,6,6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-content {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-content h5 {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.overlay-content-links a {
+  color: rgb(6,6,6);
+  padding: .5rem;
+}
+
+.card:hover .overlay-content{
   opacity: 1;
-} */
+}
 
 /* Contact */
 
