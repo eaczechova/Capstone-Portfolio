@@ -12,7 +12,7 @@
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
     <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body class="container-fluid main-container">
+  <body data-spy="scroll" data-target="#navbarNav" data-offset="100" class="container-fluid main-container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light row fixed-top">
       <a class="navbar-brand brand-name" href="#home">Ewa Czech</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,52 +71,162 @@
         <h2 class="portfolio-hg2" id="portfolio">Portfolio</h2>
         <div class="row justify-content-center card-container">
           <div class="card">
-            <img class="image" src="img/item_1.png" alt="">
+            <img class="image" src="img/item_1.png" alt="web application dashboard">
             <div class="overlay">
               <div class="overlay-content">
-                <h5>Web Application Dashboard</h5>
-                <div class="overlay-content-links ">
+                <h5 class="open">Web Application Dashboard</h5>
+                <div class="overlay-content-links">
                   <a href="https://github.com/eaczechova/Web-App-Dashboard" target="_blank"><i class="fab fa-github"></i></a><a href=""></a>
                   <a href="https://eaczechova.github.io/Web-App-Dashboard/" target="_blank"><i class="fas fa-link"></i></a>
+                  <p class="overlay-text"><span class="overlay-text-bg"> An interactive dashboard web application including SVG and JavaScript-driven charts and graphs (from Charts.js).</span></p>
                 </div>
               </div>
             </div>
+              <div class="modal" data-index="1">
+                <div class="arrow-left" data-index="1">&lt;</div>
+                <div class="modal-content" data-index="1">
+                  <div>
+                    <span class="close-modal">X</span>
+                  </div>
+                  <figure>
+                    <img src="img/item_1.png" alt="web application dashboard" class="modal__photo">
+                    <figcaption>Web Application Dashboard</figcaption>
+                  </figure>
+                </div>
+                <div class="arrow-right" data-index="1">&gt;</div>
+              </div>
           </div>
           <div class="card">
-            <img class="image" src="img/employee.png" alt="">
+            <img class="image" src="img/employee.png" alt="employee directory ">
             <div class="overlay">
               <div class="overlay-content">
-                <h5>Employee Directory</h5>
-                <div class="overlay-content-links ">
+                <h5 class="open">Employee Directory</h5>
+                <div class="overlay-content-links">
                   <a href="https://github.com/eaczechova/Employee-Directory" target="_blank"><i class="fab fa-github"></i></a><a href=""></a>
                   <a href="https://eaczechova.github.io/Employee-Directory/" target="_blank"><i class="fas fa-link"></i></a>
+                  <p><span class="overlay-text-bg">The Employee Directory uses API to request to create information about employees. A user can 
+                   open a modal window and navigate through it. </span></p>
                 </div>
               </div>
             </div>
+            <div class="modal" data-index="2">
+                <div class="arrow-left" data-index="2">&lt;</div>
+                <div class="modal-content" data-index="2">
+                  <div>
+                    <span class="close-modal">X</span>
+                  </div>
+                  <figure>
+                    <img src="img/employee.png" alt="employee Directory" class="modal__photo">
+                    <figcaption>Employee Directory</figcaption>
+                  </figure>
+                </div>
+                <div class="arrow-right" data-index="2">&gt;</div>
+              </div>
           </div>
           <div class="card ">
-            <img class="image" src="img/game.png" alt="">
+            <img class="image" src="img/game.png" alt="game show application">
             <div class="overlay">
               <div class="overlay-content">
-                <h5>Game Show Application</h5>
+                <h5 class="open">Game Show Application</h5>
                 <div class="overlay-content-links">
                   <a href="https://github.com/eaczechova/Game-Show-App" target="_blank"><i class="fab fa-github"></i></a><a href=""></a>
                   <a href="https://eaczechova.github.io/Game-Show-App/" target="_blank"><i class="fas fa-link"></i></a>
+                  <p class="overlay-text"> The game displays a random phrase, which can be guessed by using the on screen
+                    keyboard.</p>
                 </div>
               </div>
             </div>
+            <div class="modal" data-index="3">
+                <div class="arrow-left" data-index="3">&lt;</div>
+                <div class="modal-content" data-index="3">
+                  <div>
+                    <span class="close-modal">X</span>
+                  </div>
+                  <figure>
+                    <img src="img/game.png" alt="" class="modal__photo">
+                    <figcaption>Game Show Application</figcaption>
+                  </figure>
+                </div>
+                <div class="arrow-right" data-index="3">&gt;</div>
+              </div>
           </div>
           <div class="card">
-            <img class="image" src="img/gallery.png" alt="">
+            <img class="image" src="img/gallery.png" alt="photo gallery">
             <div class="overlay">
               <div class="overlay-content">
-                <h5>Photo Gallery</h5>
+                <h5 class="open">Photo Gallery</h5>
                 <div class="overlay-content-links ">
                   <a href="https://github.com/eaczechova/Photo_Gallery" target="_blank"><i class="fab fa-github"></i></a><a href=""></a>
                   <a href="https://eaczechova.github.io/Photo_Gallery/" target="_blank"><i class="fas fa-link"></i></a>
+                  <p class="overlay-text"> An interactive photo gallery created using JavaScript and jQuery with its Lightbox plugin. </p>
                 </div>
               </div>
             </div>
+            <div class="modal" data-index="4">
+                <div class="arrow-left" data-index="4">&lt;</div>
+                <div class="modal-content" data-index="4">
+                  <div>
+                    <span class="close-modal">X</span>
+                  </div>
+                  <figure>
+                    <img src="img/gallery.png" alt="photo gallery" class="modal__photo">
+                    <figcaption>Photo Gallery</figcaption>
+                  </figure>
+                </div>
+                <div class="arrow-right" data-index="4">&gt;</div>
+              </div>
+          </div>
+          <div class="card">
+            <img class="image" src="img/hoodmap.png" alt="neighborhood map">
+            <div class="overlay">
+              <div class="overlay-content">
+                <h5 class="open">Neighborhood Map</h5>
+                <div class="overlay-content-links ">
+                  <a href="https://github.com/eaczechova/Neighborhood-Map-React" target="_blank"><i class="fab fa-github"></i></a><a href=""></a>
+                  <a href="https://github.com/eaczechova/Neighborhood-Map-React" target="_blank"><i class="fas fa-link"></i></a>
+                  <p class="overlay-text">A single page application featuring a map of a chosen neighborhood. The map includes highlighted locations and uses third-party data to fetch more detailed data about those locations.</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal" data-index="5">
+                <div class="arrow-left" data-index="5">&lt;</div>
+                <div class="modal-content" data-index="5">
+                  <div>
+                    <span class="close-modal">X</span>
+                  </div>
+                  <figure>
+                    <img src="img/hoodmap.png" alt="neighborhood map" class="modal__photo">
+                    <figcaption>Neighborhood Map</figcaption>
+                  </figure>
+                </div>
+                <div class="arrow-right" data-index="5">&gt;</div>
+              </div>
+          </div>
+          <div class="card">
+            <img class="image" src="img/memorygame.png" alt="memory game">
+            <div class="overlay">
+              <div class="overlay-content">
+                <h5 class="open">Memory Game</h5>
+                <div class="overlay-content-links ">
+                  <a href="https://github.com/eaczechova/Memory-Game" target="_blank"><i class="fab fa-github"></i></a><a href=""></a>
+                  <a href="https://eaczechova.github.io/Memory-Game/" target="_blank"><i class="fas fa-link"></i></a>
+                  <p class="overlay-text">A browser-based card matching game. </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal" data-index="6">
+                <div class="arrow-left" data-index="6">&lt;</div>
+                <div class="modal-content" data-index="6">
+                  <div>
+                    <span class="close-modal">X</span>
+                  </div>
+                  <figure>
+                    <img src="img/memorygame.png" alt="memory game" class="modal__photo">
+                    <figcaption>Memory Game</figcaption>
+                  </figure>
+                </div>
+                <div class="arrow-right" data-index="6">&gt;</div>
+              </div>
           </div>
         </div>
       </section>
@@ -124,15 +234,14 @@
         <h2 class="contact-hg2">Get In Touch</h2>
         <form class="contact-form">
           <div class="form-group">
-            <input type="text" class="form-control form-input" id="exampleInputName" aria-describedby="namelHelp" placeholder="Name">
-            <input type="email" class="form-control form-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-            <input type="text" class="form-control form-input" id="exampleInputSubject" aria-describedby="subjectHelp" placeholder="Subject">
+            <div class="form-element"><input type="text" class="form-control form-input" id="exampleInputName" aria-describedby="namelHelp" placeholder="Name"></div>
+            <div class="form-element"><input type="email" class="form-control form-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"></div>
+            <div class="form-element"><input type="text" class="form-control form-input" id="exampleInputSubject" aria-describedby="subjectHelp" placeholder="Subject"></div>
             <textarea class="form-control form-textarea" id="exampleFormControlTextarea3" rows="7" placeholder="Message"></textarea>
           </div>
           <button type="submit" class="btn btn-primary submit-btn">Submit</button>
         </form>
       </section>
-   
     </main>
     <footer>
         <div class="footer-social">
@@ -145,5 +254,6 @@
         </div>
       </footer>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
