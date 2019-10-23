@@ -77,19 +77,17 @@ mailInput.addEventListener('change', function(e){
 
 // Function on submit 
 
-submitButton.addEventListener('click', function() {
+submitButton.addEventListener('click', function(e) {
+  e.preventDefault();
 
   const formElements = document.querySelectorAll('.form-element');
-
   formElements.forEach(function(el) {
-
-    if(el.lastChild.value.length < 1 && !el.firstChild.classList.contains('tooltip')) {
-      const toolTip = document.createElement('span');
-      toolTip.classList.add('tooltip');
-      toolTip.innerHTML = 'Please fill in the field!';
-      el.prepend(toolTip);
-    } else if (el.lastChild.value.length >=1 && el.firstChild.classList.contains('tooltip')) {
-      el.removeChild(el.firstChild);
+    if(el.lastChild.value.length < 1) {
+      el.lastChild.classList.add('incorrect');
+      el.lastChild.placeholder = 'Please fill in the field!';
+    } 
+    else if (el.lastChild.value.length >=1) {
+      el.lastChild.classList.remove('incorrect');
     }
   });
 });

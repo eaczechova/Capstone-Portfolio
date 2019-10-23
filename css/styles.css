@@ -372,8 +372,17 @@ html {
   position: absolute;
   z-index: 1;
   opacity: 1;
-  right: 270px;
+  right: 0;
+  left: 80px;
   visibility: visible;
+}
+
+.incorrect {
+  border: 1px solid red;
+}
+
+.correct {
+  border: 3px solid #ccc;
 }
 
 /* Footer */
@@ -511,8 +520,13 @@ figcaption {
 
   .card {
     height: 20rem;
- } 
+  } 
+
+  .tooltip {
+    left: 270px;
+    right: 270px;
  }
+}
 
  @media (min-width: 1000px) {
 
